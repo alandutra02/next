@@ -1,0 +1,13 @@
+.roxo {
+    height: 100vh;
+    background-color: #670bbd;
+    color: #fff;
+}
+
+.roxo h1 { /* não pode ficar o h1 sozinho */
+    margin: 0;
+}
+
+/* h1 { vai dar erro porque esse seletor não está dentro de uma classe (erro dizendo que o seletor não é puro)
+margin: 0
+*/
