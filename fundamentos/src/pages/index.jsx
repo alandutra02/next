@@ -1,9 +1,17 @@
 import Link from "next/link"
-import styles from '../styles/Estiloso.module.css'
+import Navegador from "@/components/Navegador"
 export default function Inicio() {
     return (
-        <>
-            <Link className={styles.linkBranco} href="/estiloso">Estiloso</Link>
-        </>
+        <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            height: '100vh',
+        }}>
+            <Navegador destino='/estiloso' menu="Estiloso"/>
+            <Navegador destino='/exemplo' menu="Exemplo" cor="#9400d3" />
+            <Navegador destino='/jsx' menu="JSX" cor="crimson" />
+        </div>
     )
 }
