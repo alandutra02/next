@@ -1,8 +1,9 @@
+import Link from "next/link"
+import styles from '../styles/Estiloso.module.css'
 export default function Inicio() {
     return (
         <>
-            <h1>Fundamentos de Next.js & React</h1>
-            <h2>Vamos estudar esse framework</h2>
+            <Link className={styles.linkBranco} href="/estiloso">Estiloso</Link>
         </>
     )
 }
