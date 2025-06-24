@@ -1,4 +1,5 @@
-import { useState } from "react"
+
+import Layout from "@/components/Layout"
 
 export const getStaticProps = async () => { // getStaticProps é uma função do next.js. Essa função deve retornar um objeto com a propriedade props, e essas props serão injetadas automaticamente no componente da página, que no caso é Estatico = props =>{}.
 
@@ -17,10 +18,12 @@ export const getStaticProps = async () => { // getStaticProps é uma função do
 const Estatico = props => { // aqui está o componente da página e é aqui que o Next.js injeta automaticamente o objeto retornado pela função getStaticPrps(){}
 
     return (
-        <div>
-            <h1>Conteúdo Estático</h1>
-            <h2>Último Valor = {props.valor}</h2>
-        </div>
+        <Layout>            
+            <div>
+                <h1>Conteúdo Estático</h1>
+                <h2>Último Valor = {props.valor}</h2>
+            </div>
+        </Layout>
     )
 }
 
