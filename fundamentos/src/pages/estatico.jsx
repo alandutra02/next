@@ -18,7 +18,7 @@ export const getStaticProps = async () => { // getStaticProps é uma função do
 const Estatico = props => { // aqui está o componente da página e é aqui que o Next.js injeta automaticamente o objeto retornado pela função getStaticPrps(){}
 
     return (
-        <Layout>            
+        <Layout titulo="Conteúdo Estático">            
             <div>
                 <h1>Conteúdo Estático</h1>
                 <h2>Último Valor = {props.valor}</h2>
